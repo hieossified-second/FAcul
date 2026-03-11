@@ -15,7 +15,7 @@ public class Menu {
 
         int menu = sc.nextInt();
 
-        switch (menu){
+        switch (menu) {
             case 1:
                 System.out.println("Voce escolheu a primeira opçcao");
                 System.out.println("que e a opcao de cadastrar produto");
@@ -23,20 +23,21 @@ public class Menu {
                 System.out.println("o que voce deseja cadastrar ?");
 
                 break;
-        }
-        switch (menu){
+
             case 2:
                 System.out.println("Voce escolheu a segunda opçcao");
                 System.out.println("que e a opcao de Listas dos produtos");
                 break;
-        }
-        switch (menu){
+
             case 3:
                 System.out.println("Voce escolheu a terceira opçcao");
                 System.out.println("que e a opcao de Sair do Sistema");
                 break;
+
+
+            default:
+                System.out.println("item do menu invalido");
+
         }
-
-
     }
 }
