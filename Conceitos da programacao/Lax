@@ -1,0 +1,199 @@
+2
+
+import java.util.Scanner;
+
+public class Exercicios (
+
+public static void main(String[] args){
+
+Scanner sc = new Scanner(System.in);
+
+System.out.println("Cardápio =====");
+
+System.out.println("100 Cachorro Quente R$ 1,20");
+
+System.out.println("101 Bauru R$ 1,30");
+
+10
+
+System.out.println("102 Bauru com ovo R$ 1,50");
+
+11
+
+System.out.println("103 Hambúrguer R$ 1,20");
+
+12
+
+System.out.println("184 Cheeseburguer R$ 1,30");
+
+13
+
+System.out.println("105 Refrigerante R$ 1,00");
+
+14
+
+15
+
+16
+
+31
+
+32
+
+33
+
+System.out.println("Digite o código do produto");
+
+int codigo sc.nextInt();
+
+System.out.println("Digite a quantidade");
+
+int quantidade sc.nextInt();
+
+double precounidade = 0;
+
+String nomeProduto = "";
+
+switch (codigo){
+
+case 100:
+
+nomeProduto "Cachorro Quente";
+
+precounidade 1.20;
+
+break;
+
+case 101:
+
+nomeProduto "Bauru";
+
+precounidade 1.30;
+
+break;
+
+case 102:
+
+nomeProduto "Bauru com ovo";
+
+precounidade 1.50;
+
+breaks
+
+case 183:
+
+nomeProduto "Hambúrguer";
+
+precounidade 1.203
+
+breaksprecounidade 1.20;
+
+27
+
+break;
+
+28
+
+29
+
+case 101:
+
+30
+
+nomeProduto "Bauru";
+
+31
+
+32
+
+precounidade 1.30;
+
+33
+
+break;
+
+34
+
+35
+
+case 102:
+
+36
+
+nomeProduto "Bauru com ovo";
+
+37
+
+precounidade 1.50;
+
+38
+
+break;
+
+case 103:
+
+nomeProduto = "Hambúrguer";
+
+precounidade 1.20;
+
+break;
+
+case 104:
+
+nomeProduto = "Cheeseburguer";
+
+precounidade 1.30;
+
+break;
+
+case 105:
+
+51
+
+nome Produto "Refrigerante";
+
+52
+
+precounidade = 1.00;
+
+53
+
+break;
+
+54
+
+55
+
+default:
+
+56
+
+57
+
+System.out.println("Código Inválido");
+
+}
+
+61
+
+62
+
+63
+
+64
+
+65
+
+return;
+
+double valortotal precounidade quantidade;
+
+System.out.println("*** Informações da compra -");
+
+System.out.println("Produto: + nomeProduto);
+
+System.out.printf("Valor a ser pago é de: R$ %.2f", valortotal);
+
+67
+
+sc.close();
