@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class tuffox {
+    public static void main(String[] args) throws InterruptedException{
+        Scanner sc = new Scanner(System.in);
+        String usuario1 = "Hie";
+        String usuario2 = "Solo";
+
+
+        System.out.println("Iniciando hieOS");
+
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Carregando...");
+            Thread.sleep(2000);
+        }
+
+        boolean os = true;
+
+        System.out.println("Ola, Seja bem vindo\n" +
+                "Digite seu usuario (1/2)");
+
+
+
+        while(os) {
+            int usu_esc = sc.nextInt();
+
+            if (usu_esc == 1) {
+                System.out.println("Bem vindo " + usuario1);
+            }
+
+            System.out.println("Digite sua senha");
+            int senha = sc.nextInt();
+
+            if (senha != 123) {
+                System.out.println("Senha incorreta, tente novamente");
+                return;
+            }
+            else {
+                os = false;
+            }
+        }
+        System.out.println("voce entrou");
+
+    }
+}
