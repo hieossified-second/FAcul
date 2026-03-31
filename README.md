@@ -1,2 +1,2 @@
 # FAcul
-# Apenas um repertorio para colocar trabalhos da faculdade
+# Apenas um repertorio para colocar trabalhos, exercicios e testes da faculdade
