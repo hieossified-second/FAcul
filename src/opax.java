@@ -1,3 +1,5 @@
+//Testando funções do java
+
 import java.util.Scanner;
 
 public class opax{
