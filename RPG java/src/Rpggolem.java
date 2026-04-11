@@ -3,6 +3,8 @@ import java.util.Scanner;
 import java.util.Random;
 import java.util.TreeMap;
 
+//codigo esta incompleto e possui muitos erros!!
+
 public class Rpggolem {
 
     public static void espaco() {
@@ -32,12 +34,12 @@ public class Rpggolem {
         int heal = 4;
         int heal_life = 20;
         int player_curado = player_life + heal_life;
-        int choose_golem = generator.nextInt(3);
+
         int player_attack_f = 17;
         int player_attack = generator.nextInt(35);
         int golem_attack = generator.nextInt(15);
-        int golem_life_after_dmg1 = golem_life - player_attack;
-        int player_l_a_dmg = player_life - golem_attack;
+
+
 
         System.out.println("Sala 2");
         System.out.println("");
@@ -123,7 +125,7 @@ public class Rpggolem {
                         System.out.println("Voce deu " + player_attack + " de DMG no Golem❗");
                         espaco();
 
-
+                        int golem_life_after_dmg1 = golem_life - player_attack;
 
                         if (player_attack >= 27) {
                             System.out.println("🩸 DANO CRITICO 🩸");
@@ -140,11 +142,13 @@ public class Rpggolem {
                         espaco();
                         Thread.sleep(2000);
 
-
+                        int choose_golem = generator.nextInt(3);
 
                         if (choose_golem == 0) {
                             System.out.println("Ele ataca");
                             System.out.println("Voce levou " + golem_attack + " de DMG");
+                            int player_l_a_dmg = player_life - golem_attack;
+
 
                             if (golem_attack >= 11) {
                                 System.out.println("Ele te deu um DMG critico ❗");
@@ -170,14 +174,12 @@ public class Rpggolem {
                         }
                         break;
                     case 3:
-                        //Codigo da cura ainda possui bug, nao esta 100% pronto
-
+                        
                         if (player_life >= 100) {
                             System.out.println("Voce nao pode usar cura [vida maxima atingida]");
                             break;
                         } else if (player_life < 100) {
                             System.out.println("Voce escolheu se curar");
-
 
                             int heal_used = heal - 1 ;
 
@@ -186,16 +188,16 @@ public class Rpggolem {
                                     player_curado = player_life + heal_life;
                                 }
 
-                                System.out.println("Agora voce possui " + heal_used + " De curas sobrando");
+                                System.out.println("Agora voce possui " + heal_used);
 
 
-                                if (player_life >= 100) {
-                                    player_life = max_player_life;
+                                if (player_life == 100) {
+                                    player_life = 100;
                                 }
 
                                 player_life = player_curado;
 
-                                System.out.println("Seu HP atual e: " + player_curado);
+                                System.out.println("Voce possui " + player_curado + " de HP");
                         }
 
 
