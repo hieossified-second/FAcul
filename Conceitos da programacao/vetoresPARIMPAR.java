@@ -4,8 +4,6 @@ public class vetoresPARIMPAR {
     public static void main(String[] args){
         Scanner sc =  new Scanner(System.in);
         int[] numeros = new int[10];
-        int[] player = new int[] {100, 15, 5, 4};
-        int[] inimigo = new int[] {50,10,5};
 
         int comando = sc.nextInt();
         if (comando == 1) {
