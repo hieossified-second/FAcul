@@ -92,3 +92,7 @@ where customerid not in (select CustomerID from orders);
 
 select * from categories
 where CategoryID not in (select categoryid from products);
+
+
+select * from employees
+where EmployeeID not in (select EmployeeID from orders);
