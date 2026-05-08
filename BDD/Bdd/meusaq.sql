@@ -39,3 +39,56 @@ select productid,
         (unitprice * unitsinstock) as 'Total por produto', CategoryID
 from products
 where (CategoryID in (1,3)) and productname like 'G_a%a';
+
+
+-- Agregadores --
+
+
+-- menor/ maior valor, media do valor dos precos e a quantidade de linhas na tabela
+
+select 
+min(unitprice) as menorValor,
+max(unitprice) as maiorValor,
+avg(unitprice) as mediaValor,
+count(UnitPrice) as qtdProdutos
+from products;
+
+-- Soma do estoque e o preco dos produtos
+
+select sum(unitprice * unitsinstock) as Soma
+from products;
+
+
+-- Produto mais caro
+
+select *
+from products
+where unitprice = (select min(unitprice) from products);
+
+-- Produto mais barato
+
+select *
+from products
+where unitprice = (select max(unitprice) from products);
+
+
+select *
+from products
+order by unitprice asc
+limit 1;
+
+
+select customerid
+from orders;
+
+
+select *
+from customers
+where customerid in (select CustomerID from orders);
+
+select *
+from customers
+where customerid not in (select CustomerID from orders);
+
+select * from categories
+where CategoryID not in (select categoryid from products);
