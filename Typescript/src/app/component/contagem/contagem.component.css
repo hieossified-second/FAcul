@@ -1,0 +1,37 @@
+.contador {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: fit-content;
+  padding: 8px 12px;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+}
+
+.contador-btn {
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 8px;
+  background: #222;
+  color: #fff;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.contador-btn:hover {
+  background: #444;
+  transform: scale(1.05);
+}
+
+.contador-numero {
+  min-width: 30px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
+}
