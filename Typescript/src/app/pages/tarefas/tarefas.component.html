@@ -1,0 +1,11 @@
+<main>   
+    <app-cabecalho titulo="Lista de tarefas"></app-cabecalho>
+
+    <div class="caixa" class="Tarefas">
+        @for (item of minhastarefas; track $index) {
+            <p>
+                {{item.titulo}}, {{item.descricao}}, {{item.prazo}}, {{item.concluido}}
+            </p>
+        }
+    </div>
+</main> 

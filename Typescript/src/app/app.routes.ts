@@ -1,10 +1,13 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
-import { ContatoComponent } from './pages/contato/contato.component';
-import { ContadorComponent } from './pages/contador/contador.component';
+import { ContagemComponent } from './pages/contagem/contagem.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { TarefasComponent } from './pages/tarefas/tarefas.component';
 
 export const routes: Routes = [
-    {path: "", component:HomeComponent},
-    {path: "ContatoComponent", component:ContatoComponent},
-    {path: "ContadorComponent", component:ContadorComponent},
+    {path:"", component:HomeComponent},
+    {path: "ContagemComponent", component:ContagemComponent}, 
+    {path: "TarefasComponent", component:TarefasComponent},
+    {path: "**", component:NotFoundComponent}
 ];
+   

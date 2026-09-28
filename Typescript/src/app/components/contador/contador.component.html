@@ -1,0 +1,18 @@
+<div class="contador" class="caixa">
+    <h1 class="titulo">{{titulo()}}</h1>
+    <button>{{contagem}}</button>
+    <button (click)="diminuir()">-</button>
+    <button (click)="aumentar()">+</button>
+    <p></p>
+
+    <div [class.erro]="contagem < 0">
+        @if (contagem < 0) {
+            <h1>numero invalido</h1>
+        }
+
+        @if (contagem === 67) {
+            <img src="https://media1.tenor.com/m/tJO6kM3FePUAAAAC/67-67-kid.gif" alt="image">
+        }
+    </div>
+</div>
+
