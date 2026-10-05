@@ -7,16 +7,16 @@ import { Component, input } from '@angular/core';
   styleUrl: './contagem.component.css'
 })
 export class ContagemComponent {
-  titulo = input("Contador")
-  contagem = 0
+  titulo = input("...")
+  num = 0
 
   aumentar(){
-    this.contagem = this.contagem + 1
+    this.num = this.num + 1;
   }
 
   diminuir(){
-    if (this.contagem > 0){
-      this.contagem = this.contagem - 1
+    if(this.num > 0){
+      this.num = this.num - 1;
     }
   }
 }

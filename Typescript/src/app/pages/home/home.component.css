@@ -1,8 +1,12 @@
-.caixa{    
-    background-color: rgb(101, 101, 245);
-    color: white;
-    padding: 15px;
-    border: black solid 2px;
+.contador {
+    padding: 25px;
+    margin: 50px auto;
+
+    background: #1e1e2f;
+    color: #ffffff;
+
     border-radius: 20px;
-    margin: 0
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+    font-family: Arial, sans-serif;
 }

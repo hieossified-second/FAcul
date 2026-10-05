@@ -1,42 +1,45 @@
-import { Component } from '@angular/core';
-import { CabecalhoComponent } from '../../components/cabecalho/cabecalho.component';
+import { Component, importProvidersFrom } from '@angular/core';
+import { CabecalhoComponent } from '../../component/cabecalho/cabecalho.component';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-tarefas',
-  imports: [CabecalhoComponent],
+  imports: [CabecalhoComponent, FormsModule],
   templateUrl: './tarefas.component.html',
   styleUrl: './tarefas.component.css'
 })
 export class TarefasComponent {
- minhastarefas: Tarefas[] = [
-    {
-      id: 1,
-      titulo: 'Aprender angular',
-      descricao: 'Estudar angular',
-      prazo: '10/10/2026',
-      concluido: false
-    },
-    {
-      id: 1,
-      titulo: "Criar for",
-      descricao: "Estudar angular",
-      prazo: "10/10/2026",
-      concluido: false
-    },
-    {
-      id: 1,
-      titulo: "fazer tabelas",
-      descricao: "Estudar angular",
-      prazo: "10/10/2026",
-      concluido: false
-    }
- ]
-}
 
-type Tarefas = {
-  id: number,
-  titulo: string,
-  descricao: string,
-  prazo: string,
-  concluido: boolean
+
+  minhasTarefas: Tarefas[] = []
+
+  novoTitulo: string = '';
+  novaDesc: string = '';
+  novoPrazo: string = '';
+
+  adicionarTarefas(){
+    if(this.novoTitulo.trim() == ''){
+      return
+    }
+
+    this.minhasTarefas.push({
+      id: this.minhasTarefas.length + 1,
+      titulo: this.novoTitulo,
+      descricao: this.novaDesc,
+      prazo: this.novoPrazo,
+      concluido: false
+    });
+
+    this.novoTitulo = '';
+    this.novaDesc = '';
+    this.novoPrazo = '';
+  }
 }
+  
+type Tarefas = {
+    id: Number,
+    titulo: String,
+    descricao: String,
+    prazo: String,
+    concluido: Boolean
+};

@@ -1,0 +1,38 @@
+.contador {
+    padding: 25px;
+    margin: 50px auto;
+
+    background: #1e1e2f;
+    color: #008cff;
+
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+    font-family: Arial, sans-serif;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fdfdfd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+tr {
+  border-bottom: 1px solid #000000;
+}
+
+tr:first-child {
+  background: #626e88;
+  color: rgb(255, 255, 255);
+}
+
+tr:hover:not(:first-child) {
+  background: #d1d1d1;
+}
+
+td {
+  padding: 17px;
+}

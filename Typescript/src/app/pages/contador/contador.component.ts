@@ -1,11 +1,10 @@
-import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
-import { CabecalhoComponent } from '../../components/cabecalho/cabecalho.component';
+import { Component, input } from '@angular/core';
+import { CabecalhoComponent } from '../../component/cabecalho/cabecalho.component';
 import { ContagemComponent } from '../../component/contagem/contagem.component';
 
 @Component({
   selector: 'app-contador',
-  imports: [RouterLink, CabecalhoComponent, ContagemComponent],
+  imports: [CabecalhoComponent, ContagemComponent],
   templateUrl: './contador.component.html',
   styleUrl: './contador.component.css'
 })

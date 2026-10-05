@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CabecalhoComponent } from '../../components/cabecalho/cabecalho.component';
+import { CabecalhoComponent } from '../../component/cabecalho/cabecalho.component';
 
 @Component({
   selector: 'app-not-found',

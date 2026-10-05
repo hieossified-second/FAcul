@@ -1,0 +1,22 @@
+.caixa {
+    padding: 25px;
+    margin: 0;
+    text-align: center;
+
+    background: #1e1e2f;
+    color: #ffffff;
+
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+    font-family: Arial, sans-serif;
+}
+
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-decoration: double;
+}

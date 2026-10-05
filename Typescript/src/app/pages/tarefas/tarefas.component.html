@@ -1,11 +1,36 @@
-<main>   
-    <app-cabecalho titulo="Lista de tarefas"></app-cabecalho>
+<main>
+    <app-cabecalho titulo="Tarefas"></app-cabecalho>
+    <div class="Tarefas" class="contador">
 
-    <div class="caixa" class="Tarefas">
-        @for (item of minhastarefas; track $index) {
-            <p>
-                {{item.titulo}}, {{item.descricao}}, {{item.prazo}}, {{item.concluido}}
-            </p>
+        <input placeholder="Titulo" [(ngModel)]="novoTitulo">
+        <p></p>
+        <input placeholder="Descrição" [(ngModel)]="novaDesc">
+        <p></p>
+        <input placeholder="Prazo" [(ngModel)]="novoPrazo">
+        <p></p>
+        <button (click)="adicionarTarefas()">Adicionar +</button>
+
+        <p></p>
+
+        @for (item of minhasTarefas; track $index){
+        
+            <table>
+                <tr>
+                    <td>{{item.titulo}}</td>
+                </tr>
+                <tr>
+                    <td>{{item.descricao}}</td>
+                </tr>
+                <tr>
+                    <td>{{item.prazo}}</td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                </table>
+                
+                <p></p>
+            
         }
     </div>
-</main> 
+</main>
